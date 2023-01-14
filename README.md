@@ -7,16 +7,7 @@ professional use. This website is developed for showcase purposes only and not f
 
 ## Table of Contents
 
-- [A Collaborative Project](#survey-company---a-collaborative-project)
-- [Description](#description)
-- [Tech Stack](#tech-stack)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Demo](#demo)
-- [Team](#team)
-- [Disclaimer](#disclaimer)
+
 
 ## Twiik
 
@@ -47,7 +38,7 @@ professional use. This website is developed for showcase purposes only and not f
 1. Clone the repository
 
 ```bash
-git clone https://github.com/khanahmad4527/survey_company.git
+git clone https://github.com/khanahmad4527/twiik-fitness-app.git
 ```
 2. Install The json-server
 
