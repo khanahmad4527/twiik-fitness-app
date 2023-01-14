@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="shortcut icon" href="https://www.shapelink.com/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+        font-family: Lato;
+      }
+      .outter {
+        display: block;
+        width: 29%;
+        padding: 30px 70px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .outter h1 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+      }
+      .form input {
+        width: 100%;
+        padding: 10px 0px;
+        margin-bottom: 20px;
+        border: none;
+        outline: none;
+        border-color: transparent;
+        border-bottom: 1px solid;
+      }
+      .checkbox {
+        display: flex;
+        width: 62%;
+        margin: auto;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+        margin-bottom: 10px;
+      }
+      .checkbox p {
+        font-size: 13px;
+      }
+      .login-btn button {
+        width: 100%;
+        padding: 12px 0px;
+        border-radius: 10px;
+        background-color: #3cc6dc;
+        color: white;
+        border: none;
+        font-size: 15px;
+      }
+      .login-btn button:hover {
+        background-color: #2b8b9a;
+        cursor: pointer;
+      }
+      .outter p {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+      .facebook-btn button {
+        width: 100%;
+        padding: 12px 0px;
+        border-radius: 10px;
+        background-color: #3b5998;
+        color: white;
+        border: none;
+        font-size: 15px;
+      }
+      .facebook-btn button:hover {
+        background-color: #293d68;
+        cursor: pointer;
+      }
+      .links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        font-size: 13px;
+        /* border: 1px solid red; */
+        margin-top: 10px;
+      }
+      .links a {
+        text-decoration: none;
+        color: #3cc6dc;
+      }
+      #cancel-btn {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        border: none;
+        outline: none;
+        border-radius: 50%;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outter" id="popCancel">
+      <h1>LOGIN</h1>
+      <form class="form">
+        <input type="text" placeholder="username_or_email" required />
+        <input type="password" placeholder="Password" required />
+      </form>
+      <div class="checkbox">
+        <input type="checkbox" name="" id="" />
+        <p>Log in automatically next time</p>
+      </div>
+      <div class="login-btn">
+        <button>Login</button>
+      </div>
+      <p>or</p>
+      <div class="facebook-btn">
+        <a
+          href="https://www.facebook.com/dialog/oauth?response_type=code&client_id=26013359906&redirect_uri=https%3A%2F%2Fwww.twiikapp.com%2Fconnect.php%2Fapp%2Ffacebook&state=https%3A%2F%2Fwww.shapelink.com%2Fen%2Fuser%2Ffacebooklogin&scope=email"
+          ><button>Login with Facebook</button></a
+        >
+      </div>
+      <div class="links">
+        <a href="https://www.shapelink.com/en/user/password"
+          >Forgotten the password?</a
+        >
+        <p>.</p>
+        <a href="https://www.shapelink.com/en/user/register">Create account</a>
+      </div>
+      <div id="cancel-btn">&times;</div>
+    </div>
+  </body>
+</html>
+
+<script>
+  let cancelBtn = document.getElementById("cancel-btn");
+  cancelBtn.addEventListener("click", funCancel);
+
+  function funCancel(event) {
+    if (event.target == cancelBtn) {
+      document.getElementById("popCancel").style.display = "none";
+    }
+  }
+</script>

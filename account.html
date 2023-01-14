@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twiik</title>
+    <link rel="shortcut icon" href="https://www.shapelink.com/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link rel="stylesheet" href="account.css" />
+  </head>
+
+  <body>
+    <div id="overlay">
+      <!-- navbar start-->
+      <div id="navbar">
+        <div>
+          <div>
+            <a href="homepage.html"
+              ><img
+                src="https://kcdn.twiikapp.com/images/logo.png"
+                alt="navbar-image"
+            /></a>
+          </div>
+          <div>
+            <h3>
+              <a href="app.html">Get the app</a>
+            </h3>
+            <h3>
+              <a href="contact.html">Contact</a>
+            </h3>
+            <h3 onclick="login()">Login</h3>
+            <a href="account.html"><button>Create account</button></a>
+          </div>
+        </div>
+      </div>
+      <!-- mid starts -->
+      <div id="mid">
+        <div id="mid1">
+          <h1>Do you have a code for TeamBoost?</h1>
+          <p>
+            If you have received a code to join a TeamBoost, then you can create
+            your account here on the web, fill in the code below and click
+            "Proceed".
+          </p>
+          <form>
+            <input type="text" placeholder="Enter your code here" />
+            <input type="submit" value="Proceed" />
+          </form>
+        </div>
+        <div id="mid2">
+          <h1>Create an account in the app!</h1>
+          <p>
+            To be able to use Twiik you need to create an account in the app.
+          </p>
+        </div>
+        <div id="mid3">
+          <img src="https://kcdn.twiikapp.com/images/twiik_register.png" />
+        </div>
+        <div id="mid4">
+          <p>Get the app</p>
+        </div>
+        <div id="mid5">
+          <a href="https://itunes.apple.com/se/app/twiik/id1022318229?ls=1&mt=8"
+            ><img
+              src="https://kcdn.twiikapp.com/images/language/en/appstore_button.png"
+          /></a>
+          <a
+            href="https://play.google.com/store/apps/details?id=me.twiik.twiikapp"
+          >
+            <img
+              src="https://kcdn.twiikapp.com/images/language/en/googleplay_button.png"
+          /></a>
+        </div>
+      </div>
+      <hr />
+      <!-- bottom starts -->
+      <div id="bottom">
+        <div>
+          <img src="https://kcdn.twiikapp.com/images/logo.png" />
+          <p>All rights reserved © 2002 - 2022</p>
+          <p>Developed by Wellnesstech Labs International AB</p>
+          <div>
+            <a href="https://www.shapelink.com/en/start/contact">Contact Us</a>
+            <p>.</p>
+            <a href="https://www.shapelink.com/en/misc/agreement"
+              >Terms & Conditions</a
+            >
+          </div>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/twiikme/"
+            ><img src="https://kcdn.twiikapp.com/images/icon_facebook.png"
+          /></a>
+          <a href="https://www.instagram.com/twiik.me/"
+            ><img src="https://kcdn.twiikapp.com/images/icon_instagram.png"
+          /></a>
+          <a href="https://www.linkedin.com/company/twiik/"
+            ><img src="https://kcdn.twiikapp.com/images/icon_linkedin.png"
+          /></a>
+          <a href="https://itunes.apple.com/se/app/twiik/id1022318229?ls=1&mt=8"
+            ><img src="https://kcdn.twiikapp.com/images/icon_apple.png"
+          /></a>
+          <a
+            href="https://play.google.com/store/apps/details?id=me.twiik.twiikapp"
+            ><img src="https://kcdn.twiikapp.com/images/icon_android.png"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <!-- popup form -->
+    <div class="outter" id="popCancel">
+      <h1>LOGIN</h1>
+      <form class="form">
+        <input type="text" placeholder="username_or_email" required />
+        <input type="password" placeholder="Password" required />
+      </form>
+      <div class="checkbox">
+        <input type="checkbox" name="" id="" />
+        <p>Log in automatically next time</p>
+      </div>
+      <div class="login-btn">
+        <button>Login</button>
+      </div>
+      <p>or</p>
+      <div class="facebook-btn">
+        <a
+          href="https://www.facebook.com/dialog/oauth?response_type=code&client_id=26013359906&redirect_uri=https%3A%2F%2Fwww.twiikapp.com%2Fconnect.php%2Fapp%2Ffacebook&state=https%3A%2F%2Fwww.shapelink.com%2Fen%2Fuser%2Ffacebooklogin&scope=email"
+          ><button>Login with Facebook</button></a
+        >
+      </div>
+      <div class="links">
+        <a href="https://www.shapelink.com/en/user/password"
+          >Forgotten the password?</a
+        >
+        <p>.</p>
+        <a href="account.html">Create account</a>
+      </div>
+      <div id="cancel-btn">&times;</div>
+    </div>
+  </body>
+</html>
+
+<script>
+  function login() {
+    document.getElementById("overlay").style.opacity = "0.1";
+    document.getElementById("popCancel").style.display = "block";
+  }
+  let cancelBtn = document.getElementById("cancel-btn");
+  cancelBtn.addEventListener("click", funCancel);
+
+  function funCancel(event) {
+    if (event.target == cancelBtn) {
+      document.getElementById("popCancel").style.display = "none";
+      document.getElementById("overlay").style.opacity = "1";
+    }
+  }
+</script>
