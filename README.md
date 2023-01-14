@@ -6,8 +6,15 @@ you can easily find the perfect fit. Twiik also offers a variety of activities a
 professional use. This website is developed for showcase purposes only and not for commercial use.
 
 ## Table of Contents
-
-
+1. [Introduction](#introduction)
+2. [Description](#description)
+3. [Tech Stack](#tech-stack)
+4. [Features](#features)
+5. [Installation](#installation)
+6. [Usage](#usage)
+7. [Screenshots](#screenshots)
+8. [Demo](#demo)
+9. [Disclaimer](#disclaimer)
 
 ## Twiik
 
