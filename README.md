@@ -1,20 +1,15 @@
 # Twiik
 
-Welcome to Twiik, a web application that connects users to the best trainers, gyms, and coaches. Whether you're looking for a personal trainer or trying to find the
-perfect gym, Twiik has got you covered. Our user-friendly interface makes it easy to browse through a variety of trainers and gyms, and with our powerful search tools,
-you can easily find the perfect fit. Twiik also offers a variety of activities and challenges for businesses, making it the perfect tool for both personal and
-professional use. This website is developed for showcase purposes only and not for commercial use.
+Welcome to Twiik, a simple web app that addvertices the gyms and coaches.
 
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Description](#description)
 3. [Tech Stack](#tech-stack)
-4. [Features](#features)
-5. [Installation](#installation)
-6. [Usage](#usage)
-7. [Screenshots](#screenshots)
-8. [Demo](#demo)
-9. [Disclaimer](#disclaimer)
+4. [Installation](#installation)
+5. [Screenshots](#screenshots)
+6. [Demo](#demo)
+7. [Disclaimer](#disclaimer)
 
 ## Twiik
 
@@ -22,10 +17,7 @@ This project is a re-creation of the website "Twiik" for educational and showcas
 
 ## Description
 
-Welcome to Twiik, a web application that connects users to the best trainers, gyms, and coaches. Whether you're looking for a personal trainer or trying to find the
-perfect gym, Twiik has got you covered. Our user-friendly interface makes it easy to browse through a variety of trainers and gyms, and with our powerful search tools,
-you can easily find the perfect fit. Twiik also offers a variety of activities and challenges for businesses, making it the perfect tool for both personal and
-professional use. This website is developed for showcase purposes only and not for commercial use.
+Welcome to Twiik, a simple web app that addvertices the gyms and coaches.
 
 ## Tech Stack
 - JavaScript
@@ -33,12 +25,6 @@ professional use. This website is developed for showcase purposes only and not f
 - CSS
 - Json-server
 
-## Features
-
-- User-friendly interface that allows users to easily browse through a variety of trainers and gyms.
-- Powerful search tools that allow users to find the perfect fit.
-- A variety of activities and challenges for businesses.
-- A coach-login feature that allows users to access their personal trainers and gym coaches.
 
 ## Installation
 
@@ -57,11 +43,6 @@ npm install -g json-server
 ```bash
 json-server --watch db.json
 ```
-
-## Usage
-- Create an account and log in
-- Find best coach
-- Tracj your healt status
 
 ## Screenshots
 
